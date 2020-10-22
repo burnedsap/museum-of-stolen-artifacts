@@ -31,7 +31,7 @@ function preload() {
 function setup() {
   // createCanvas(640, 480);
   console.log(clientWidth+" "+clientHeight);
-  var canvas = createCanvas(clientWidth, clientHeight);
+  var canvas = createCanvas(411, 823);
   console.log('canvas setup done');
   canvas.parent("camera-holder");
   pixelDensity(1);
