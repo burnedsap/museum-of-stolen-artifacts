@@ -61,18 +61,21 @@ function setup() {
 }
 
 function draw() {
-  fill(200, 10, 10);
+
+  background(0);
+  // Draw the video
+  image(video, 0, 0);
+
+  // Draw the label
+    fill(200, 10, 10);
   noStroke();
   rect(0, 0, width, 20);
   fill(255);
   textSize(15);
   textFont(interR);
   text("Museum of Stolen Artifacts", 5, 5);
-  background(0);
-  // Draw the video
-  image(video, 0, 0);
-
-  // Draw the label
+  
+  
   fill(0);
   noStroke();
   rect(0, height-20, width, 20);
