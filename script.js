@@ -22,14 +22,32 @@ let label = "";
 
 // Load the model first
 function preload() {
+  clientHeight = document.getElementById("camera-holder").clientHeight;
+  clientWidth = document.getElementById("camera-holder").clientWidth;
   classifier = ml5.imageClassifier(imageModelURL + "model.json");
 }
 
 function setup() {
-  createCanvas(320, 260);
-  // Create the video
-  video = createCapture(VIDEO);
-  video.size(320, 240);
+  // createCanvas(640, 480);
+  var canvas = createCanvas(clientWidth, clientHeight);
+  canvas.parent("camera-holder");
+  pixelDensity(1);
+
+// Create the video
+ var constraints = {
+    audio: false,
+    video: {
+      facingMode: {
+        exact: "environment"
+      }
+    }
+    //video: {
+    //facingMode: "user"
+    //}
+  };
+  video = createCapture(constraints);
+//  video = createCapture(VIDEO);
+//  video.size(320, 240);
   video.hide();
 
   flippedVideo = ml5.flipImage(video);
