@@ -71,6 +71,7 @@ function draw() {
   noStroke();
   rect(0, 0, width, 20);
   fill(255);
+  textAlign(LEFT);
   textSize(15);
   textFont(interR);
   text("Museum of Stolen Artifacts", 5, 5);
@@ -80,8 +81,8 @@ function draw() {
   noStroke();
   rect(0, height-10, width, 20);
   fill(255);
-  textAlign(LEFT);
-  text(label, 10, height - 4);
+  
+  text(label, 5, height - 4);
 }
 
 // Get a prediction for the current video frame
