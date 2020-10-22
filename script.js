@@ -19,6 +19,7 @@ let video;
 let flippedVideo;
 // To store the classification
 let label = "";
+let clientHeight, clientWidth;
 
 // Load the model first
 function preload() {
@@ -45,8 +46,8 @@ function setup() {
     //facingMode: "user"
     //}
   };
-//  video = createCapture(constraints);
-  video = createCapture(VIDEO);
+  video = createCapture(constraints);
+//  video = createCapture(VIDEO);
 //  video.size(320, 240);
   video.hide();
 
