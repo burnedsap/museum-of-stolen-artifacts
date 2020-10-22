@@ -69,7 +69,7 @@ function draw() {
   // Draw the label
     fill(200, 10, 10);
   noStroke();
-  rect(0, 0, width, 20);
+  rect(0, 10, width, 20);
   fill(255);
   textAlign(LEFT);
   textSize(15);
@@ -77,9 +77,9 @@ function draw() {
   text("Museum of Stolen Artifacts", 5, 5);
   
   
-  fill(0);
-  noStroke();
-  rect(0, height-10, width, 20);
+//  fill(0);
+//  noStroke();
+//  rect(0, height-10, width, 20);
   fill(255);
   
   text(label, 5, height - 4);
