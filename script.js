@@ -69,12 +69,12 @@ function draw() {
   // Draw the label
     fill(200, 10, 10);
   noStroke();
-  rect(0, 10, width, 20);
+  rect(0, 0, width, 30);
   fill(255);
   textAlign(LEFT);
   textSize(15);
   textFont(interR);
-  text("Museum of Stolen Artifacts", 5, 5);
+  text("Museum of Stolen Artifacts", 5, 15);
   
   
 //  fill(0);
@@ -82,7 +82,7 @@ function draw() {
 //  rect(0, height-10, width, 20);
   fill(255);
   
-  text(label, 5, height - 4);
+  text(label, 5, height - 15);
 }
 
 // Get a prediction for the current video frame
