@@ -23,16 +23,16 @@ let clientHeight, clientWidth;
 
 // Load the model first
 function preload() {
-  clientHeight = document.getElementById("camera-holder").clientHeight;
-  clientWidth = document.getElementById("camera-holder").clientWidth;
+//  clientHeight = document.getElementById("camera-holder").clientHeight;
+//  clientWidth = document.getElementById("camera-holder").clientWidth;
   classifier = ml5.imageClassifier(imageModelURL + "model.json");
 }
 
 function setup() {
   // createCanvas(640, 480);
-  console.log(clientWidth+" "+clientHeight);
+//  console.log(clientWidth+" "+clientHeight);
   var canvas = createCanvas(411, 823);
-  console.log('canvas setup done');
+//  console.log('canvas setup done');
   canvas.parent("camera-holder");
   pixelDensity(1);
 
