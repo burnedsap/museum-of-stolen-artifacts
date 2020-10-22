@@ -50,7 +50,7 @@ function setup() {
   };
   video = createCapture(constraints);
 //  video = createCapture(VIDEO);
-//  video.size(320, 240);
+  video.size(411, 823);
   video.hide();
 
   flippedVideo = ml5.flipImage(video);
