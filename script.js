@@ -64,7 +64,7 @@ function draw() {
 
   background(0);
   // Draw the video
-  image(video, 35, 0);
+  image(video, 0, 35);
 
   // Draw the label
     fill(200, 10, 10);
@@ -82,7 +82,7 @@ function draw() {
 //  rect(0, height-10, width, 20);
   fill(255);
   
-  text(label, 5, video.height+20);
+  text(label, 5, height-40);
 }
 
 // Get a prediction for the current video frame
