@@ -36,7 +36,7 @@ function setup() {
   var canvas = createCanvas(clientWidth, clientHeight);
 //  console.log('canvas setup done');
   canvas.parent("camera-holder");
-  pixelDensity(1);
+//  pixelDensity(1);
 
 // Create the video
  var constraints = {
