@@ -78,9 +78,8 @@ function draw() {
   
   fill(0);
   noStroke();
-  rect(0, height-20, width, 20);
+  rect(0, height-10, width, 20);
   fill(255);
-  textSize(16);
   textAlign(LEFT);
   text(label, 10, height - 4);
 }
