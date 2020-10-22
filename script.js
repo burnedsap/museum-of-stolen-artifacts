@@ -20,6 +20,7 @@ let flippedVideo;
 // To store the classification
 let label = "";
 let clientHeight, clientWidth;
+let InterR;
 
 // Load the model first
 function preload() {
