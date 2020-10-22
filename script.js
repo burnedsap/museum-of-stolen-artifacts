@@ -26,6 +26,7 @@ function preload() {
   clientHeight = document.getElementById("camera-holder").clientHeight;
   clientWidth = document.getElementById("camera-holder").clientWidth;
   classifier = ml5.imageClassifier(imageModelURL + "model.json");
+   interR = loadFont('fonts/Inter-Regular.ttf');
 }
 
 function setup() {
@@ -59,15 +60,25 @@ function setup() {
 }
 
 function draw() {
+  fill(200, 10, 10);
+  noStroke();
+  rect(0, 0, width, 20);
+  fill(255);
+  textSize(15);
+  textFont(interR);
+  text("Museum of Stolen Artifacts", 5, 5);
   background(0);
   // Draw the video
   image(video, 0, 0);
 
   // Draw the label
+  fill(0);
+  noStroke();
+  rect(0, height-20, width, 20);
   fill(255);
   textSize(16);
-  textAlign(CENTER);
-  text(label, width / 2, height - 4);
+  textAlign(LEFT);
+  text(label, 10, height - 4);
 }
 
 // Get a prediction for the current video frame
