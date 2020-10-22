@@ -45,8 +45,8 @@ function setup() {
     //facingMode: "user"
     //}
   };
-  video = createCapture(constraints);
-//  video = createCapture(VIDEO);
+//  video = createCapture(constraints);
+  video = createCapture(VIDEO);
 //  video.size(320, 240);
   video.hide();
 
