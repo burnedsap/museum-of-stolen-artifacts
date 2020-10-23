@@ -67,22 +67,8 @@ function draw() {
   image(video, 0, 35);
 
   // Draw the label
-    fill(200, 10, 10);
-  noStroke();
-  rect(0, 0, width, 35);
-  fill(255);
-  textAlign(LEFT);
-  textSize(15);
-  textFont(interR);
-  text("Museum of Stolen Artifacts", 5, 20);
-  
-  
-//  fill(0);
-//  noStroke();
-//  rect(0, height-10, width, 20);
-  fill(255);
-  
-  text(label, 5, height-40);
+document.getElementById("text-label").innerHTML = label;  
+//  text(label, 5, height-40);
 }
 
 // Get a prediction for the current video frame
