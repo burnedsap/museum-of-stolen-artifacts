@@ -11,7 +11,7 @@ h1 {
 .top-text {
 	width: 100%;
 	background: red;
-	height: 20px;
+	height: 25px;
 	margin: 0;
 }
 
@@ -19,6 +19,7 @@ h1 {
 	color: white;
 	font-size: 15px;
 	padding: 5px;
+	margin: 0;
 }
 
 .camera-holder{
@@ -31,7 +32,7 @@ h1 {
 .bottom-text {
 	width: 100%;
 	background: black;
-	height: 20px;
+	height: 25px;
 	margin: 0;
 }
 
@@ -39,5 +40,6 @@ h1 {
 	color: white;
 	font-size: 15px;
 	padding: 5px;
+	margin: 0;
 }
 
